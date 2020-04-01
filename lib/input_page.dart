@@ -41,7 +41,9 @@ class _InputPageState extends State<InputPage> {
                       print('Male card was pressed.');
                     },
                     child: ReusableCard(
-                      colorr: selectorGender == Gender.male ? activeCardColor : inactiveCardColor,
+                      colorr: selectorGender == Gender.male
+                          ? activeCardColor
+                          : inactiveCardColor,
                       cardChild: IconContent(
                         icon: FontAwesomeIcons.mars,
                         label: 'Male',
@@ -58,7 +60,9 @@ class _InputPageState extends State<InputPage> {
                       print('Female card was pressed.');
                     },
                     child: ReusableCard(
-                      colorr: selectorGender == Gender.female ? activeCardColor : inactiveCardColor,
+                      colorr: selectorGender == Gender.female
+                          ? activeCardColor
+                          : inactiveCardColor,
                       cardChild: IconContent(
                         icon: FontAwesomeIcons.venus,
                         label: 'Female',
