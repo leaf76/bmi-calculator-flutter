@@ -1,10 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-const labelTextStyle = TextStyle(
-  fontSize: 18.0,
-  color: Color(0xFF8D8E98),
-);
+import 'constants.dart';
 
 class IconContent extends StatelessWidget {
   IconContent({@required this.icon, this.label});
@@ -26,7 +23,7 @@ class IconContent extends StatelessWidget {
         ),
         Text(
           label,
-          style: labelTextStyle,
+          style: kLabelTextStyle,
         )
       ],
     );
